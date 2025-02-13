@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c5c1c1 !important;
+    height: 100vh;
+}
+
+
+
+.container {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 80vh;
+    overflow: auto !important;
+    /* Enables scrolling */
+    scrollbar-width: none !important;
+    /* For Firefox */
+    -ms-overflow-style: none !important;
+    /* For Internet Explorer and Edge */
+}
+
+.container ::-webkit-scrollbar {
+    display: none !important;
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+form {
+    /* border: 1px solid red; */
+    position: fixed;
+    bottom: 0;
+    right: 30%;
+    gap: 10px;
+    place-self: center;
+    padding: 1rem;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(135, 206, 250, 0.459);
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+
+
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    margin-right: 2rem;
+    border-radius: .7rem;
+    padding-left: 1rem;
+    font-size: 1.1rem !important;
+}
+
+@media (max-width:500px) and (min-width:0){
+
+    form {
+        /* border: 1px solid red; */
+        position: fixed;
+        bottom: 0;
+        right: 5% !important;
+        gap: 10px;
+        place-self: center;
+        padding: 1rem;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(135, 206, 250, 0.459);
+        border-radius: .3rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: .5rem !important;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.response {
+    margin-top: 20px;
+    text-align: left;
+}
+
+pre {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
